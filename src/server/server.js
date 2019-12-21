@@ -3,12 +3,12 @@ const server = express()
 import { PORT } from "./constants/index.js"
 import webpackMiddleware from './middlewares/webpackMiddleware';
 const isProd = process.env.NODE_ENV === "production"
+server.use('/', require('./controllers'));
 
 if (!isProd) {
   webpackMiddleware(server)
 }
 
-server.use('/', require('./controllers'));
 
 const staticMiddleware = express.static("dist")
 server.use(staticMiddleware)

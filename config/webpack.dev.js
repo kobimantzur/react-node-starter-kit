@@ -20,7 +20,9 @@ module.exports = {
     contentBase: "dist",
     overlay: true,
     hot: true,
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: 'index.html',
+  },
     stats: {
       colors: true
     }
