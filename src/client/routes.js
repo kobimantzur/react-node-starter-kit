@@ -7,6 +7,7 @@ import {
 import Layout from './components/Layout';
 import Home from './containers/Home';
 import Results from './containers/Results';
+debugger;
 const Routes = ({ history }) => (
   <ConnectedRouter history={history}>
     <Layout>

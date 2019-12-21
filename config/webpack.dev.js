@@ -20,6 +20,7 @@ module.exports = {
     contentBase: "dist",
     overlay: true,
     hot: true,
+    historyApiFallback: true,
     stats: {
       colors: true
     }
