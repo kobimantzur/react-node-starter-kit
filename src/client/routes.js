@@ -12,7 +12,7 @@ const Routes = ({ history }) => (
     <Layout>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/results"  component={Results} />
+        <Route path="/one-pager/*"  component={Results} />
         {/* <Redirect to="/404" /> */}
       </Switch>
       
