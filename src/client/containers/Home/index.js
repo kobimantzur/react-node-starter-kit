@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from "react-redux";
 import { postRequest } from '../../reducers/Home/actions';
+
 class Home extends Component {
 
   render() {

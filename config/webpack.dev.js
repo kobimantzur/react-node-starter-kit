@@ -7,7 +7,7 @@ module.exports = {
     main: [
       "react-hot-loader/patch",
       "webpack-hot-middleware/client?reload=true",
-      "./src/main.js"
+      "./src/client/main.js"
     ]
   },
   mode: "development",
@@ -90,7 +90,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({
-      template: "./src/index.html"
+      template: "./src/client/index.html"
     })
   ]
 }

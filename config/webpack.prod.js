@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   entry: {
-    main: ["./src/main.js"]
+    main: ["./src/client/main.js"]
   },
   mode: "production",
   output: {
@@ -65,7 +65,7 @@ module.exports = {
       filename: "[name]-[contenthash].css"
     }),
     new HTMLWebpackPlugin({
-      template: "./src/index.html"
+      template: "./src/client/index.html"
     }),
     new webpack.DefinePlugin({
       'process.env': {
